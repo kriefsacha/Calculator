@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col operationContainer">
+        <app-operation></app-operation>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div *ngFor="let buttonValue of clearDeleteValues" class="col-6 buttonCalculatorCol">
+        <app-button-calculator [value]="buttonValue" (onClick)="onButtonCalculatorClick($event)">
+        </app-button-calculator>
+    </div>
+</div>
+<div class="row">
+    <div *ngFor="let buttonValue of operatorsValues" class="col-3 buttonCalculatorCol">
+        <app-button-calculator [value]="buttonValue" (onClick)="onButtonCalculatorClick($event)">
+        </app-button-calculator>
+    </div>
+</div>
+<div class="row">
+    <div *ngFor="let buttonValue of numbersValues" class="col-4 buttonCalculatorCol">
+        <app-button-calculator [value]="buttonValue" (onClick)="onButtonCalculatorClick($event)">
+        </app-button-calculator>
+    </div>
+</div>

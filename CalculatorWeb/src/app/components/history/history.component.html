@@ -1,0 +1,11 @@
+<br>
+<h5 id="historyTitle">History</h5>
+<div *ngFor="let data of historyData" class="row historyRow">
+    <div class="col" style="color: white;">
+        <div class="row">
+            <div class="col-5">{{data.date | date :'dd/MM/yyyy HH:mm'}} | </div>
+            <div class="col">{{data.operation}} = {{data.result}}</div>
+        </div>
+    </div>
+    <br>
+</div>

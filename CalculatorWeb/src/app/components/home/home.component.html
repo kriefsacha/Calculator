@@ -1,0 +1,13 @@
+<div class="row container">
+    <div class="col">
+  <h4 id="welcome"> Welcome to the CalculatorWeb !</h4>
+<div class="row">
+    <div class="col-7 calculatorContainer">
+        <app-calculator (onCalculated)="onCalculated($event)"></app-calculator>
+    </div>
+    <div class="col-5 historyContainer">
+        <app-history [historyData]="historyData"></app-history>
+    </div>
+</div>      
+    </div>
+</div>
