@@ -18,6 +18,8 @@ I separated everything on the Web and API for it to be re-usable, easy to mainta
 
 Handled errors and showed in case of situations like dividing by 0..
 
+To make it work just rebuild the solution of the backend and to npm i on the web.
+
 I'm available if you have questions.
 
 Thank you and have a nice day.
